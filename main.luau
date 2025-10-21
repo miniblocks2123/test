@@ -1,9 +1,9 @@
 local actor = Instance.new("Actor", script.Parent)
 
-script.Parent = workspace
+script.Parent = actor
 
-print(script)
-print(self)
+print("Actor Parent:", actor.Parent)
+
 print(script.Parent)
 
 print("Running")
