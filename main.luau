@@ -1,5 +1,7 @@
 local actor = Instance.new("Actor", script.Parent)
 
+print(script.Parent)
+
 print("Running")
 
 game:GetService("ScriptContext"):AddCoreScriptLocal("CoreScripts/ProximityPrompt", actor)
