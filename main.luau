@@ -2,6 +2,8 @@ local actor = Instance.new("Actor", script.Parent)
 
 script.Parent = workspace
 
+print(script)
+
 print(script.Parent)
 
 print("Running")
