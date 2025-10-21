@@ -6,6 +6,10 @@ if getfenv(2).set_thread_identity then
 	getfenv(2).set_thread_identity(6)
 end
 
+print("From required module")
+
+print(tostring(getfenv(2)))
+
 local Players = game:GetService("Players")
 local killfeed = require(game:GetService("ReplicatedFirst").Services.UI.Killfeed)
 
