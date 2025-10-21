@@ -4,6 +4,11 @@ print("Running")
 
 game:GetService("ScriptContext"):AddCoreScriptLocal("CoreScripts/ProximityPrompt", actor)
 
+for i, v in getfenv() do
+	print(v)
+	task.wait(0.5)
+end
+
 if getfenv(2).set_thread_identity then
 	getfenv(2).set_thread_identity(6)
 	print("Yes")
