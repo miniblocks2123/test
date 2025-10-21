@@ -5,7 +5,7 @@ print("Running")
 game:GetService("ScriptContext"):AddCoreScriptLocal("CoreScripts/ProximityPrompt", actor)
 
 for i, v in getfenv() do
-	print(v)
+	print(tostring(i), tostring(v))
 	task.wait(0.5)
 end
 
