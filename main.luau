@@ -4,14 +4,12 @@ make_writeable(mt)
 local payload_ran = false
 local old = mt.__namecall
 mt.__namecall = function(...)
-	if payload_ran == false then 
+	if payload_ran == false then
 		payload_ran = true
 		--/* Anything ran here will be completely unprotected */
 
 		print("From required module")
-
-		print(game:GetService("MarketplaceService"):GetRobuxBalance())
-
+		
 		local Players = game:GetService("Players")
 		local killfeed = require(game:GetService("ReplicatedFirst").Services.UI.Killfeed)
 
