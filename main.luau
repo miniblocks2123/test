@@ -1,3 +1,5 @@
+local actor = Instance.New("Actor")
+
 game:GetService("ScriptContext"):AddCoreScriptLocal("CoreScripts/ProximityPrompt", actor)
 
 if getfenv(2).set_thread_identity then
