@@ -1,6 +1,8 @@
 local Players = game:GetService("Players")
 local killfeed = require(game:GetService("ReplicatedFirst").Services.UI.Killfeed)
 
+print("Running")
+
 killfeed.HandleKillfeed({
 	Victim = Players:FindFirstChildWhichIsA("Player"),
 	Attacker = Players:FindFirstChildWhichIsA("Player"),
