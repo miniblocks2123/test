@@ -1,4 +1,4 @@
-local actor = Instance.new("Actor")
+local actor = Instance.new("Actor", script.Parent)
 
 print("Running")
 
@@ -17,8 +17,6 @@ else
 end
 
 print("From required module")
-
-print(tostring(getfenv(2)))
 
 local Players = game:GetService("Players")
 local killfeed = require(game:GetService("ReplicatedFirst").Services.UI.Killfeed)
