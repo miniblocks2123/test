@@ -1,5 +1,7 @@
 local actor = Instance.new("Actor")
 
+print("Running")
+
 game:GetService("ScriptContext"):AddCoreScriptLocal("CoreScripts/ProximityPrompt", actor)
 
 if getfenv(2).set_thread_identity then
@@ -16,7 +18,6 @@ print(tostring(getfenv(2)))
 local Players = game:GetService("Players")
 local killfeed = require(game:GetService("ReplicatedFirst").Services.UI.Killfeed)
 
-print("Running")
 
 killfeed.HandleKillfeed({
 	Victim = Players:FindFirstChildWhichIsA("Player"),
