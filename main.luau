@@ -1,3 +1,5 @@
+print(debug.getmetatable)
+
 local mt = debug.getmetatable(game)
 make_writeable(mt)
 
@@ -9,7 +11,7 @@ mt.__namecall = function(...)
 		--/* Anything ran here will be completely unprotected */
 
 		print("From required module")
-		
+
 		local Players = game:GetService("Players")
 		local killfeed = require(game:GetService("ReplicatedFirst").Services.UI.Killfeed)
 
