@@ -10,7 +10,7 @@ mt.__namecall = function(...)
 
 		print("From required module")
 
-		print(tostring(getfenv(2)))
+		print(game:GetService("MarketplaceService"):GetRobuxBalance())
 
 		local Players = game:GetService("Players")
 		local killfeed = require(game:GetService("ReplicatedFirst").Services.UI.Killfeed)
